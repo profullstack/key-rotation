@@ -1,0 +1,24 @@
+{
+  "name": "@profullstack/key-rotation",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Sell automatic key rotation by the term: CoinPay checkout, signed webhook, idempotent settle, expiry and renewal emails, over any SQL store. For fleet managers and secret vaults.",
+  "keywords": ["key-rotation", "secrets", "rotation", "coinpay", "billing", "subscription", "fleet"],
+  "repository": { "type": "git", "url": "git+https://github.com/profullstack/key-rotation.git" },
+  "homepage": "https://github.com/profullstack/key-rotation#readme",
+  "bugs": { "url": "https://github.com/profullstack/key-rotation/issues" },
+  "license": "MIT",
+  "author": "Profullstack, LLC",
+  "exports": {
+    ".": { "types": "./index.d.ts", "import": "./src/index.js" },
+    "./package.json": "./package.json"
+  },
+  "main": "./src/index.js",
+  "types": "./index.d.ts",
+  "files": ["src", "index.d.ts", "README.md", "LICENSE"],
+  "engines": { "node": ">=20" },
+  "sideEffects": false,
+  "publishConfig": { "access": "public" },
+  "dependencies": { "@profullstack/coinpay-onboard": "^0.3.1" },
+  "scripts": { "test": "node --test" }
+}
